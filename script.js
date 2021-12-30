@@ -15,7 +15,7 @@ generateBtn.addEventListener("click", writePassword);
 
 //Line 14 and above untouched given code
 
-function generatePassword() {
+ function generatePassword() {
 
 
 // WHEN I click the button to generate a password
@@ -24,7 +24,7 @@ function generatePassword() {
     //attempted varibales, @array = (A..Z) better way??? symbols???
     let upperCase = 'abcdefghijklmnopqrstuvwxyz'.toUpperCase().split('')
     let lowerCase = 'abcdefghijklmnopqrstuvwxyz'.split('')
-    let numeric = '0123456789z'.split('')
+    let numeric = '0123456789'.split('')
     let specialChar = '!@#$&'.split('')
 // 'abcdefghijklmnopqrstuvwxyz'.split('');
 
@@ -32,7 +32,7 @@ function generatePassword() {
             //Present user series of prompts/confirms
     var lengthChoice
     do{
-       lengthChoice = prompt('How many characters');
+       lengthChoice = prompt('How many characters in your password? (Choose a number between 8-128)');
      } while(lengthChoice < 8 || lengthChoice >128) // check while loop
     
 
@@ -41,13 +41,34 @@ function generatePassword() {
     var numericPrompt 
     var specialCharPrompt 
     do{
-      upperCasePrompt = confirm('Do you want uppercase characters?')
-      lowerCasePrompt = confirm('Do you want lower case characters?')
-      numericPrompt = confirm ('Do you want numeric characters?')
-      specialCharPrompt = confirm('Do you want special characters?')
+      upperCasePrompt = confirm('Do you want Uppercase Characters? (Click "Ok" for Yes or "Cancel" for No)') //updated string for flow? add parentheses??
+      lowerCasePrompt = confirm('Do you want Lowercase Characters? (Click "Ok" for Yes or "Cancel" for No)')
+      numericPrompt = confirm ('Do you want Numeric Characters? (Click "Ok" for Yes or "Cancel" for No)')
+      specialCharPrompt = confirm('Do you want Special Characters? (Click "Ok" for Yes or "Cancel" for No)')
     } while(upperCasePrompt == false && lowerCasePrompt == false && numericPrompt == false && specialCharPrompt == false ) 
     
 
+
+
+    // function password(lengthChoice, characters) //fishing????
+      var password = '';
+      var placeHolder = '';
+
+    // // console.log(password(12,char));
+
+      for ( var i= 0; i< lengthChoice; i++) { //explain this increment laymans? I know it adds but
+        placeHolder += (Math.floor(Math.random() * upperCasePrompt.lowercasePrompt.numericPrompt.specialCharPrompt.lengthChoice)); //Do I create a var for all characters or include all vars?
+        // pwd += ????? (uppr,lower,num,spec,lenght?)
+      }
+      return placeHolder;
+    
+
+
+    // function writePassword() {
+    //   var password = genratePassword();
+    //   var passwordOutput = document.querySelector('#password');
+    //   passwordOutput.value = password;
+    // } fishing????????????????
 
 
    

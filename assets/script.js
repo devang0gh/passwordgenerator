@@ -21,7 +21,7 @@ generateBtn.addEventListener("click", writePassword);
     let upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
     let lowerCase = 'abcdefghijklmnopqrstuvwxyz'.split('')
     let numeric = '0123456789'.split('')
-    let specialChar = '!@#$&*?^%'.split('')
+    let specialChar = '!@#$&*?^%=+-._'.split('')
 
             
     var lengthChoice

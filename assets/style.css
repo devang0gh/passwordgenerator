@@ -12,10 +12,24 @@ body,
   padding: 0;
 }
 
+/*changed color*/
 body {
   font-family: sans-serif;
-  background-color: lightgray; /*changed to lightgray*/
+  background-color: rgb(211, 211, 243); 
 }
+
+/* adjusted border,color, and backround */
+h1 {
+  display: inline-block;
+  color:black;
+  border: 2px solid rgb(13, 13, 32);
+  border-radius: 20px;
+  width: 50%;
+  height: 50%;
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(111, 111, 235);
+  }
 
 .wrapper {
   padding-top: 30px;
@@ -30,9 +44,10 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+/*changed color and increased border radius*/
 .card {
-  background-color: hsl(0, 1%, 50%); /*chaged color*/
-  border-radius: 20px; /*increased border radius*/
+  background-color: hsl(226, 77%, 83%); 
+  border-radius: 20px; 
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   color: hsl(0, 0%, 0%);
@@ -52,7 +67,7 @@ header {
 
 .card-body {
   min-height: 100px;
-  border-radius: 25px; /*added border radius eorking?*/
+ 
 }
 
 .card-footer {
@@ -73,9 +88,10 @@ header {
   clear: both;
 }
 
+/* adjusted brightness of red button color */
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: rgb(182, 39, 39);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -97,7 +113,7 @@ button[disabled] {
 .float-right {
   float: right;
 }
-
+/* changed border color */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -113,7 +129,7 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px dashed rgb(189, 189, 224);
   border-radius: 6px;
   resize: none;
   overflow: hidden;
